@@ -1,0 +1,115 @@
+html {
+  font-family: 'SFUIDisplay', sans-serif;
+  color: white;
+  background-color: #212121;
+}
+
+.game-container-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 232px;
+  width: 426px;
+  cursor: pointer;
+}
+
+.game-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 25%;
+}
+
+.game-name {
+  font-size: 24px;
+  margin: 0;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.game-description {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 10px;
+  color: gray;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.game-icon:hover {
+  box-shadow: 0 0 20px 5px whitesmoke;
+  transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+.rounded-button {
+  border-radius: 18px; /* adjust the pixel value to change the roundness of the button */
+  background-color: #474747; /* change the background color of the button */
+  color: white; /* change the color of the button text */
+  font-size: 16px; /* change the font size of the button text */
+  padding: 10px 20px; /* adjust the padding of the button (top-bottom, left-right) */
+  border: none; /* remove the border of the button */
+  cursor: pointer; /* change the cursor style when hovering over the button */
+}
+
+.game-description-page {
+  font-size: 18px;
+  margin: 0;
+  margin-top: 10px;
+  color: #ebebeb;
+}
+
+.game-icon-page {
+  width: 135px;
+  height: 135px;
+  border-radius: 25%;
+}
+
+.game-icon-page:hover {
+  box-shadow: 0 0 20px 5px whitesmoke;
+  transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+.rounded-button:hover {
+  box-shadow: 0 0 20px 5px whitesmoke;
+  transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 20px;
+  height: 60px;
+  background-color: #161616;
+}
+
+.logo img {
+  height: 250;
+  width: 250px;
+  position: relative;
+}
+
+.title {
+  font-size: 24px;
+  position: relative;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.game-container-wrapper {
+  /* Existing styles for game container wrapper */
+  margin-top: 25px; /* Change this value according to the height of your header */
+}
