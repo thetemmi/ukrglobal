@@ -126,12 +126,24 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Pointer trail effect */
 .trail {
   position: absolute;
-  height: 10px;
-  width: 10px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
   pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent);
+  box-shadow: 0 0 8px var(--primary-color), 0 0 15px var(--secondary-color);
+  transform: scale(1);
+  animation: pulse 1.5s infinite ease-in-out;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
